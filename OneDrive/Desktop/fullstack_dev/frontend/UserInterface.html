@@ -48,10 +48,11 @@
             .firstsection{
                 display: flex;
                 justify-content: space-around;
-                margin: 80px 0;
+                margin: 20px 0;
             }
             .firstsection >div{
                 width: 30%;
+        
             }
             .leftsection{
                 font-size: 3rem;
@@ -62,7 +63,7 @@
             }
             .rightsection img{
                 width: 130%;
-                height: 80%;
+                height:80%;
             }
             .purple{
                 color: #040b3c;
@@ -71,7 +72,7 @@
                 color:#040b3c;
             }
             .secondsection{
-                height:80vh;
+                height:90vh;
             }
             #search-product-wrapper {
         text-align: center;
@@ -288,7 +289,52 @@ html {
 .hd_Ovr {
     overflow: hidden!important;
 }
+#signup-btn{
+    color: white;
+    margin: 2px 25px;
 
+}
+#login-btn{
+    color: white;
+    margin: 2px 20px;
+    
+
+}
+a:hover{
+     font-size: larger; 
+    color: rgb(215, 205, 10);
+    
+
+}
+#Citys{
+    width: 150px;
+    height: 50px;
+
+}
+.wholesection{
+    text-align: center;
+    font-size: 20px;
+}
+h2{
+    color: #040b3c;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+b{
+    color: blanchedalmond;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+textarea {
+    display: block;
+    margin-left: 600px;
+    margin-right: auto;
+    color:black;
+    border: 2px solid black;
+}
+button Submit :hover{
+    color:rgb(153,153,256);
+    font-size:1.3rem;
+
+}
     </style>
     </head>
     <body>
@@ -297,12 +343,16 @@ html {
                 <div class="left"><b>SpedioMart</b></div>
                 <div class="right">
                     <ul>
-                        <li><a href="/">Home</a></li>
+                        <li><a href="home.html" rel="stylesheet" >Home</a></li>
                         <li><a href="/">About</a></li>
                         <li><a href="/">Services</a></li>
                         <li><a href="/">Cart</a></li>
                         <li><a href="/">Contact Us</a></li>
                     </ul>
+                </div>
+                <div class="login" id="login-btn" >
+                    <a id="signup-btn" href="">Sign Up</a>
+                    <a id="login-btn" href="login.html" target="_blank">Log in</a>
                 </div>
 
             </nav>
@@ -317,13 +367,38 @@ html {
                     </h3>
                     <div id="search-area" class="cBFlex cBJcc">
                         <div class="dropdown">
-                            <button class="dropbtn" id="searchPlaceDP">
-                                <i class="fa fa-map-marker"></i>
-                                <span id="usercity">All India</span>
-                                <i class="fa fa-angle-down pull-right"></i>
-                            </button>
+                            <label for="Citys"></label></label>
+                            <select name="citys" id="Citys" >
+                                <option value="">--Choose Your City--</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Nagpur">Nagpur</option>
+                                <option value="Thane">Thane</option>
+                                <option value="Pimpri-Chinchawad">Pimpri-Chinchawad</option>
+                                <option value="Nashik">Nashik</option>
+                                <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+                                <option value="Vasai-Virar">Vasai-Virar</option>
+                                <option value="Aurangabad">Aurangabad</option>
+                                <option value="Navi Mumbai">Navi Mumbai</option>
+                                <option value="Solapur">Solapur</option>
+                                <option value="Mira Bhayandar">Mira Bhayandar</option>
+                                <option value="Bhiwandi Nizampur">Bhiwandi Nizampur</option>
+                                <option value="Jalgaon">Jalgaon</option>
+                                <option value="Amravati">Amravati</option>
+                                <option value="Nanded">Nanded</option>
+                                <option value="Kolhapur">Kolhapur</option>
+                                <option value="Ulhasnagar">Ulhasnagar</option>
+                                <option value="Sangli">Sangli</option>
+                                <option value="Malegaon">Malegaon</option>
+                                <option value="Akola">Akola</option>
+                                <option value="Latur">Latur</option>
+                                <option value="Dhule">Dhule</option>
+                                <option value="Ahmednagar">Ahmednagar</option>
+                            </select>
                             <div id="searchPlaces" class="dropdown-content">
-                                <input type="text" placeholder="Search your city" id="searchPlaceInput" class="srin ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" onkeyup="sugg_op()" fdprocessdid="b3crgf">
+                                <select name="Choose Your City" id="citys">
+                                    <option value=""></option>
+                                </select>
                                 <div id="al_ind" class="bn_alop">All India</div>
                                 ::after
                             </div>
@@ -341,17 +416,40 @@ html {
                 Hii,This Website is one of the Best for<span class="purple"> Market </span>
                 <div>And It contains Various types of </div>
                 <span id="element"></span>
+
+                
              </div>
              <div class="rightsection">
                 <div id = "SearchProducts">
             </div>
                 <img src="hp324.png" alt="" >
-                </div>
+        </div>
              </div>
+               </section>
+               <section class="secondsection">
+                    <div class="wholesection">
+                        <hr color="black">
+                        <h2>Features : </h2>
+                        <br>
+                        <p>1.<b>SpedioMart</b> Website is used to give Product in much effecient way that is product has been delivered time to time with the low price. <br>
+                        <br>2.<b>SpedioMart</b> is effecient. <br> <br>
+                    3.<b>SpedioMart </b> provide direct contact with manufacturer.</p>
+                                <br>
+                                <br>
+                                <hr color="black">
+                                <br>
+                                <br>
+                                <label for="Customer1" style="margin-right: 400px; color: #040b3c; text-shadow: rgba(46,91,173,0.6);">Feedback: </label>
+                                <br>
+                            <textarea name="Customer1" id="Customer1" cols="70" rows="10" minlength="0">
+ 
+                            </textarea>
+                            <input type="button" value="Submit" style="color:white; background-color: black; width: 5.5%; margin-right: auto; margin-left: 200px;">
+                
+                </div>
+
             </section>
-            <section class="secondsection"></section>
-        
-        </main>
+            </main>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed('#element', {
@@ -359,112 +457,6 @@ html {
               typeSpeed: 60,
             });
         </script>
-        <script>
-            
-var hd_webLoc=location.hostname;
-var hd_UrlPri = hd_webLoc.match(/^dev/) ? "dev-" : (hd_webLoc.match(/^stg/)) ? "stg-" : "";
-var page_sel = location.hostname.indexOf(hd_UrlPri + "seller") == 0 ? 1 : 0;
-var page_trd = location.hostname.indexOf(hd_UrlPri + "trade") == 0 ? 1 : 0;
-var page_tend = location.hostname.indexOf(hd_UrlPri + "tenders") == 0 ? 1 : 0;
-if(typeof ims!== 'undefined' && typeof ims.hcq!== 'undefined' && typeof ims.hcq!== '' ){
-    changeselect_city(ims.hcq);
-}else{
-    var referrer = document.referrer;
-    if(referrer == ""||(referrer.match(/.indiamart.com/))){
-        var hd_ct = readCookie('hd_ctval');
-        city=(hd_ct)?getparamVal(hd_ct,'ctval'):"All India";
-        city=(city=="undefined" || city=="Undefined")?"All India":city;
-        changeselect_city(city);
-    }else{
-        changeselect_city("All India");
-    }  
-}
-function hdr_getusercity(city){
-    var city =city||"All India";
-    city=(city==''||city=="null"||city==null)?'All India':city;
-    city=city.replace('-', ' ');
-    var splitcity = city.toLowerCase().split(' ');
-    for (var i = 0; i < splitcity.length; i++) {
-        splitcity[i] = splitcity[i].charAt(0).toUpperCase() + splitcity[i].substring(1);  
-    }
-    city = splitcity.join(' ');
-    var hddrpdn2 = '<button id="hd_searchPlace" class="hd_cFl cpo"><span id="hd_usercity" class="Hd_db">'+city+'</span></button><div id="city_hold" class="hd_cSrb Hd_dbn"><label for="hd_city_sugg"></label><input type="text" id="hd_city_sugg" placeholder ="Enter City" value ="Enter City" class="srin ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" onkeyup="AlInd_Op()"><div class="hd_alop Hd_dbn cpo" id="all_India" >All India</div></div>';
-    document.getElementsByClassName("select-wrapper")[0].classList.add("hd_cFMn");
-    document.getElementsByClassName("select-wrapper")[0].innerHTML = hddrpdn2;
-    document.getElementsByClassName("select-wrapper")[0].style.display = "block";
-}
-function changeselect_city(city) {
-    var cookie = readCookie('ImeshVisitor');
-    var imurldata = getparamVal(cookie, 'utyp');
-    if (!(page_sel || page_trd || page_tend)&&!((imurldata == "P") && (window.location.href.indexOf("easybuy") == -1))) {
-            hdr_getusercity(city);
-    }
-}
 
-function setHdCountry()
-{
-    var hdIploc='',hdCcode='';
-    var hdSrch="iploc=";
-    if (document.cookie.length > 0){
-        var offset = document.cookie.indexOf(hdSrch);
-        if (offset != -1){
-            offset += hdSrch.length;
-            end = document.cookie.indexOf(";", offset);
-            if (end == -1)
-                end = document.cookie.length;
-            hdIploc=unescape(document.cookie.substring(offset, end));
-        }
-    }
-    if(hdIploc != '' && hdIploc.indexOf('gcniso=') != -1){
-   
-        var hdcon = hdIploc.split('gcniso=');
-        if(typeof(hdcon[1])!="undefined")
-            var hdcarr = hdcon[1].split('|');
-        hdCcode= hdcarr[0];
-    }
-    if(hdCcode == '')
-    {
-        var hdDate = new Date();
-        var hdgmt = -hdDate.getTimezoneOffset() / 60;
-        if (hdgmt != 5.5)
-            hdCcode = 'OTHER';
-        else
-            hdCcode = 'IN';
-    }
-    if(typeof(hdCcode)!="undefined" && hdCcode != '' && hdCcode == 'IN')
-    {
-        var hdInpt = document.getElementsByClassName('duet');
-        for (var i = 0, len = hdInpt.length; i < len; i++) {
-            var hdMid = hdInpt[i];
-            var hdContent = hdMid.innerHTML;
-            if(hdContent.match(/^\+91/)){
-                hdContent = hdContent.replace('+91-','0');
-                hdMid.innerHTML=hdContent;
-            }
-        }
-    }
-    else if(typeof(hdCcode)!="undefined" && hdCcode != '' && hdCcode != 'IN')
-    {
-        var hdInpt = document.getElementsByClassName('duet');
-        for (var i = 0, len = hdInpt.length; i < len; i++) {
-            var hdMid = hdInpt[i];
-            var hdContent = hdMid.innerHTML;
-            if(hdContent.match(/^0/)){
-                hdContent = hdContent.replace('0','+91-');
-                hdMid.innerHTML=hdContent;
-            }
-        }
-    }
-}
-
-if (window.addEventListener)
-    window.addEventListener("load", function(){setHdCountry();}, false);
-else if (window.attachEvent)
-    window.attachEvent("onload", function(){setHdCountry();});
-else
-    window.onload = function(){setHdCountry();};
-
-        </script>
-
-    </body>
-</html>
+        
+    </body></html>
